@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="rojoClaro">#F44336</color>
+    <color name="rojoOscuro">#D32F2F</color>
+    <color name="rosita">#FFCDD2</color>
+    <color name="Amarillo">#ffc107</color>
+    <color name="texto">#212121</color>
+    <color name="textoClaro">#757575</color>
+    <color name="marfil">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="light_grey">#EEEEEE</color>
+    <color name="white_transparent">#99FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="textoTitulos">#000000</color>
+    <color name="textoSubTitulos">#000000</color>
+    <color name="textoDescripcionItems">#000000</color>
+
+
+</resources>

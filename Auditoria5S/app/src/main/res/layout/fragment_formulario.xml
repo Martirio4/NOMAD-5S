@@ -1,0 +1,272 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nomad.auditoria5s.FragmentFormulario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/formularioContenedor"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="@dimen/margenChico"
+                android:textColor="@color/textoTitulos"
+                android:textAlignment="center"
+                android:textSize="@dimen/tamañoTitulos"
+                android:text="@string/tituloFormulario1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--titulo y recycler GONE para ver foto patron-->
+            <TextView
+                android:layout_margin="@dimen/margenChico"
+
+                android:visibility="gone"
+                android:textColor="@color/textoSubTitulos"
+                android:textAlignment="center"
+                android:textSize="@dimen/tamañoSubTitulos"
+                android:text="@string/tituloFotoPatron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/recyclerFotoPatron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            <!--FIN titulo y recycler GONE para ver foto patron-->
+            <TextView
+                android:layout_margin="@dimen/margenChico"
+
+                android:textColor="@color/textoDescripcionItems"
+                android:textAlignment="center"
+                android:textSize="@dimen/tamañoSubTitulos"
+                android:text="@string/textoItem110"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_margin="@dimen/margenChico"
+
+                android:id="@+id/rGItem11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem111"
+                    android:id="@+id/rBItem11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem112"
+                    android:id="@+id/rBItem12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem113"
+                    android:id="@+id/rBItem13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem114"
+                    android:id="@+id/rBItem14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem115"
+                    android:id="@+id/rBItem15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_margin="@dimen/margenChico"
+
+                android:textColor="@color/textoDescripcionItems"
+                android:textAlignment="center"
+                android:textSize="@dimen/tamañoSubTitulos"
+                android:text="@string/textoItem120"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_margin="@dimen/margenChico"
+
+                android:id="@+id/rGItem120"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem121"
+                    android:id="@+id/rBItem121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem122"
+                    android:id="@+id/rBItem122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem123"
+                    android:id="@+id/rBItem123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem124"
+                    android:id="@+id/rBItem124"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem125"
+                    android:id="@+id/rBItem125"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_margin="@dimen/margenChico"
+
+                android:textColor="@color/textoDescripcionItems"
+                android:textAlignment="center"
+                android:textSize="@dimen/tamañoSubTitulos"
+                android:text="@string/textoItem130"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_margin="@dimen/margenChico"
+
+                android:id="@+id/rGItem130"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem131"
+                    android:id="@+id/rBItem131"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem132"
+                    android:id="@+id/rBItem132"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+
+                    android:text="@string/StrRbItem133"
+                    android:id="@+id/rBItem133"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem134"
+                    android:id="@+id/rBItem134"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem135"
+                    android:id="@+id/rBItem135"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_margin="@dimen/margenChico"
+
+                android:textColor="@color/textoDescripcionItems"
+                android:textAlignment="center"
+                android:textSize="@dimen/tamañoSubTitulos"
+                android:text="@string/textoItem140"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_margin="@dimen/margenChico"
+
+                android:id="@+id/rGItem140"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem141"
+                    android:id="@+id/rBItem141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem142"
+                    android:id="@+id/rBItem142"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem143"
+                    android:id="@+id/rBItem143"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem144"
+                    android:id="@+id/rBItem144"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_margin="@dimen/margenChico"
+
+                    android:text="@string/StrRbItem145"
+                    android:id="@+id/rBItem145"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_margin="@dimen/margenChico"
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

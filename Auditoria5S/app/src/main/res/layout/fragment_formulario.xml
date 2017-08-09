@@ -2,30 +2,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.nomad.auditoria5s.FragmentFormulario">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.nomad.auditoria5s.Fragment.FragmentSeiri">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tituloFormulario"
+            android:layout_marginLeft="@dimen/margenChico"
+            android:layout_marginRight="@dimen/margenChico"
+            android:textColor="@color/primary_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/tamañoTitulos"
+            android:text="@string/tituloFormulario1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/secondary_text"
+            android:text="@string/hintClicItems"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
     <ScrollView
+        android:id="@+id/scrollFormulario"
+        android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
+            android:animateLayoutChanges="true"
             android:id="@+id/formularioContenedor"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_margin="@dimen/margenChico"
-                android:textColor="@color/textoTitulos"
-                android:textAlignment="center"
-                android:textSize="@dimen/tamañoTitulos"
-                android:text="@string/tituloFormulario1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
             <!--titulo y recycler GONE para ver foto patron-->
             <TextView
                 android:layout_margin="@dimen/margenChico"
-
                 android:visibility="gone"
-                android:textColor="@color/textoSubTitulos"
+                android:textColor="@color/primary_text"
                 android:textAlignment="center"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/tituloFotoPatron"
@@ -39,9 +57,11 @@
             </android.support.v7.widget.RecyclerView>
             <!--FIN titulo y recycler GONE para ver foto patron-->
             <TextView
+                android:clickable="true"
+                android:id="@+id/item110"
                 android:layout_margin="@dimen/margenChico"
 
-                android:textColor="@color/textoDescripcionItems"
+                android:textColor="@color/primary_text"
                 android:textAlignment="center"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem110"
@@ -49,8 +69,9 @@
                 android:layout_height="wrap_content" />
 
             <RadioGroup
+                android:animateLayoutChanges="true"
                 android:layout_margin="@dimen/margenChico"
-
+                android:visibility="gone"
                 android:id="@+id/rGItem11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -62,6 +83,15 @@
                     android:id="@+id/rBItem11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rBItem15"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margenChico"
+                    android:text="@string/StrRbItem115" />
+
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
 
@@ -83,20 +113,14 @@
                     android:id="@+id/rBItem14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-                <RadioButton
-                    android:layout_margin="@dimen/margenChico"
-
-                    android:text="@string/StrRbItem115"
-                    android:id="@+id/rBItem15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
 
             </RadioGroup>
 
             <TextView
                 android:layout_margin="@dimen/margenChico"
-
-                android:textColor="@color/textoDescripcionItems"
+                android:clickable="true"
+                android:id="@+id/item120"
+                android:textColor="@color/primary_text"
                 android:textAlignment="center"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem120"
@@ -104,8 +128,9 @@
                 android:layout_height="wrap_content" />
 
             <RadioGroup
+                
                 android:layout_margin="@dimen/margenChico"
-
+                android:visibility="gone"
                 android:id="@+id/rGItem120"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -150,8 +175,9 @@
 
             <TextView
                 android:layout_margin="@dimen/margenChico"
-
-                android:textColor="@color/textoDescripcionItems"
+                android:clickable="true"
+                android:id="@+id/item130"
+                android:textColor="@color/primary_text"
                 android:textAlignment="center"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem130"
@@ -159,8 +185,9 @@
                 android:layout_height="wrap_content" />
 
             <RadioGroup
+                android:animateLayoutChanges="true"
                 android:layout_margin="@dimen/margenChico"
-
+                android:visibility="gone"
                 android:id="@+id/rGItem130"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -206,8 +233,9 @@
 
             <TextView
                 android:layout_margin="@dimen/margenChico"
-
-                android:textColor="@color/textoDescripcionItems"
+                android:clickable="true"
+                android:id="@+id/item140"
+                android:textColor="@color/primary_text"
                 android:textAlignment="center"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem140"
@@ -215,8 +243,9 @@
                 android:layout_height="wrap_content" />
 
             <RadioGroup
-                android:layout_margin="@dimen/margenChico"
 
+                android:layout_margin="@dimen/margenChico"
+                android:visibility="gone"
                 android:id="@+id/rGItem140"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -258,15 +287,46 @@
                     android:layout_height="wrap_content" />
 
             </RadioGroup>
+            <ImageView
+                android:layout_marginLeft="@dimen/margenChico"
+                android:layout_marginRight="@dimen/margenChico"
+                android:background="@color/primary_dark"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="@dimen/margenChico"
+                    android:id="@+id/recyclerFotosFormulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+
+
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
+            </LinearLayout>
+
 
         </LinearLayout>
+
+
+
     </ScrollView>
+    </LinearLayout>
     <com.github.clans.fab.FloatingActionMenu
         android:layout_margin="@dimen/margenChico"
+        android:id="@+id/fab_menu"
+        app:menu_fab_size="normal"
         android:layout_gravity="bottom|right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
     </com.github.clans.fab.FloatingActionMenu>
 
 </FrameLayout>

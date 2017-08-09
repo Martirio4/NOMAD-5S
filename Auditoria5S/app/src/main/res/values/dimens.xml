@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="tamañoTitulos">20sp</dimen>
+    <dimen name="tamañoTitulos">25sp</dimen>
     <dimen name="anchoFotoCargarProducto">300dp</dimen>
     <dimen name="altoFotoCargarProducto">198dp</dimen>
     <dimen name="margenChico">12dp</dimen>
@@ -17,5 +17,5 @@
     <dimen name="margenGrande">16dp</dimen>
     <dimen name="altoLayoutVerProducto">100dp</dimen>
     <dimen name="altoTarjetaVerProducto">94dp</dimen>
-    <dimen name="tamañoSubTitulos">20sp</dimen>
+    <dimen name="tamañoSubTitulos">14sp</dimen>
 </resources>

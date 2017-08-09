@@ -14,7 +14,6 @@
     <string name="StrRbItem115">Todos los recursos existentes en los pisos, mesas y otros espacios abiertos son compartidos y utilizados adecuadamente (no hay exceso, improvisaciones, recursos innecesarias, falta o desperdicios). Puede haber irregularidades insignificantes para las características</string>
 
 
-
     <string name="textoItem120">1.2 Utilización de los recursos existentes en los lugares que son para guardar</string>
     <string name="StrRbItem121">En varios lugares fueron encontradas diversas anormalidads en el uso de recursos (proporciones exceso, improvisaciones, recursos innecesarios, falta o desperdicio).</string>
     <string name="StrRbItem122">En varios lugares fue encontrada una u otra anormalidad en el uso de recursos (proporciones exceso, improvisaciones, recursos innecesarios, falta o desperdicio).</string>
@@ -35,6 +34,9 @@
     <string name="StrRbItem143">No hay justificativa formal para algunos problemas de conservación, mas ninguno conpromete la seguridad y/o la funcionalidad de las instalaciones y recursos, teniendo en cuenta las características do ambiente.</string>
     <string name="StrRbItem144">No hay justificativa formal para uno u otro problema de conservación, mas ningunoconpromete la seguridad y/o la funcionalidad de las instalaciones y recursos, teniendo en cuenta las características do ambiente.</string>
     <string name="StrRbItem145">Hay justificación formal para todos los problemas de conservación y ninguno conpromete la seguridad y/o funcionalidad de las instalaciones y recursos, teniendo en cuenta las características del entorno. Puede haber irregularidades insignificantes para las características del entorno.</string>
+    <string name="hintClicItems">Click para expandir/contraer los item</string>
+    <string name="tagSacarFoto">Agregar Foto</string>
+    <string name="clicParaObservacion">Haga click sobre la foto para agregar comentarios</string>
 
 
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/main_contenedorFragment"
     android:layout_height="match_parent"
-    tools:context="com.nomad.auditoria5s.MainActivity">
+    tools:context="com.nomad.auditoria5s.Activity.MainActivity">
 
 
 </android.support.constraint.ConstraintLayout>

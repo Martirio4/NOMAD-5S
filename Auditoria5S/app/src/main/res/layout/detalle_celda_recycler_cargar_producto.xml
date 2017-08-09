@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/anchoLayoutCargarProducto"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tarjetaDetalle"
+            android:background="@color/accent"
+            android:elevation="@dimen/elevacionTarjetaCargaProducto"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/anchoFotoCargarProducto"
+            android:layout_height="@dimen/altoFotoCargarProducto">
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:textColorHint="@color/colorLoco"
+                  android:layout_height="wrap_content">
+                  <EditText
+                      android:visibility="gone"
+                      android:background="@color/marfil"
+                      android:id="@+id/editRecycler"
+                      android:hint="Insertar comentario"
+                      android:textColor="@color/primary_text"
+                      android:layout_width="@dimen/anchoFotoCargarProducto"
+                      android:layout_height="wrap_content" />
+              </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imagenCamara"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/anchoFotoCargarProducto"
+                android:layout_height="@dimen/altoFotoCargarProducto"
+                android:scaleType="centerInside"
+                android:src="@drawable/placeholder" />
+
+
+
+          </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margenGrande"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tarjetaDetalle"
+            android:layout_width="@dimen/anchoFotoCargarProducto"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/textoObseracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

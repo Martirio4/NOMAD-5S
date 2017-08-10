@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondoOscuro"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.nomad.auditoria5s.Fragment.FragmentSeiri">
 
@@ -13,18 +14,26 @@
             android:id="@+id/tituloFormulario"
             android:layout_marginLeft="@dimen/margenChico"
             android:layout_marginRight="@dimen/margenChico"
-            android:textColor="@color/primary_text"
+            android:textColor="@color/marfil"
             android:textAlignment="center"
             android:textSize="@dimen/tamañoTitulos"
             android:text="@string/tituloFormulario1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
+            android:layout_marginBottom="4dp"
             android:textColor="@color/secondary_text"
             android:text="@string/hintClicItems"
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/lineaDivisoria2"
+            android:layout_marginLeft="@dimen/margenChico"
+            android:layout_marginRight="@dimen/margenChico"
+            android:background="@color/accent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
 
 
     <ScrollView
@@ -32,15 +41,16 @@
         android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <LinearLayout
+        <RelativeLayout
             android:animateLayoutChanges="true"
             android:id="@+id/formularioContenedor"
-            android:orientation="vertical"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <!--titulo y recycler GONE para ver foto patron-->
             <TextView
+                android:id="@+id/textoPatron"
                 android:layout_margin="@dimen/margenChico"
                 android:visibility="gone"
                 android:textColor="@color/primary_text"
@@ -50,6 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/textoPatron"
                 android:visibility="gone"
                 android:id="@+id/recyclerFotoPatron"
                 android:layout_width="match_parent"
@@ -57,18 +68,25 @@
             </android.support.v7.widget.RecyclerView>
             <!--FIN titulo y recycler GONE para ver foto patron-->
             <TextView
+                android:layout_marginTop="@dimen/margenChico"
+                android:layout_marginBottom="@dimen/margenChico"
+                android:background="@drawable/boton_azul"
                 android:clickable="true"
                 android:id="@+id/item110"
-                android:layout_margin="@dimen/margenChico"
-
-                android:textColor="@color/primary_text"
-                android:textAlignment="center"
+                android:layout_marginStart="@dimen/margenChico"
+                android:layout_marginEnd="@dimen/margenChico"
+                android:layout_below="@id/recyclerFotoPatron"
+                android:textColor="@color/marfil"
+                android:gravity="start"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem110"
                 android:layout_width="match_parent"
+
                 android:layout_height="wrap_content" />
 
             <RadioGroup
+
+                android:layout_below="@id/item110"
                 android:animateLayoutChanges="true"
                 android:layout_margin="@dimen/margenChico"
                 android:visibility="gone"
@@ -78,7 +96,7 @@
 
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem111"
                     android:id="@+id/rBItem11"
                     android:layout_width="wrap_content"
@@ -86,7 +104,7 @@
 
                 <RadioButton
                     android:id="@+id/rBItem15"
-
+                    android:textColor="@color/marfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margenChico"
@@ -94,21 +112,21 @@
 
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem112"
                     android:id="@+id/rBItem12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem113"
                     android:id="@+id/rBItem13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem114"
                     android:id="@+id/rBItem14"
                     android:layout_width="wrap_content"
@@ -117,18 +135,22 @@
             </RadioGroup>
 
             <TextView
-                android:layout_margin="@dimen/margenChico"
+                android:layout_marginBottom="@dimen/margenChico"
+                android:background="@drawable/boton_azul"
+                android:layout_below="@id/rGItem11"
+                android:layout_marginStart="@dimen/margenChico"
+                android:layout_marginEnd="@dimen/margenChico"
                 android:clickable="true"
                 android:id="@+id/item120"
-                android:textColor="@color/primary_text"
-                android:textAlignment="center"
+                android:textColor="@color/marfil"
+                android:minLines="2"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem120"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <RadioGroup
-                
+                android:layout_below="@id/item120"
                 android:layout_margin="@dimen/margenChico"
                 android:visibility="gone"
                 android:id="@+id/rGItem120"
@@ -137,35 +159,35 @@
 
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem121"
                     android:id="@+id/rBItem121"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem122"
                     android:id="@+id/rBItem122"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem123"
                     android:id="@+id/rBItem123"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem124"
                     android:id="@+id/rBItem124"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem125"
                     android:id="@+id/rBItem125"
                     android:layout_width="wrap_content"
@@ -174,17 +196,22 @@
             </RadioGroup>
 
             <TextView
-                android:layout_margin="@dimen/margenChico"
+                android:layout_marginBottom="@dimen/margenChico"
+                android:background="@drawable/boton_azul"
+                android:layout_below="@id/rGItem120"
+                android:layout_marginStart="@dimen/margenChico"
+                android:layout_marginEnd="@dimen/margenChico"
                 android:clickable="true"
                 android:id="@+id/item130"
-                android:textColor="@color/primary_text"
-                android:textAlignment="center"
+                android:textColor="@color/marfil"
+                android:minLines="2"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem130"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <RadioGroup
+                android:layout_below="@id/item130"
                 android:animateLayoutChanges="true"
                 android:layout_margin="@dimen/margenChico"
                 android:visibility="gone"
@@ -194,14 +221,14 @@
 
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem131"
                     android:id="@+id/rBItem131"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem132"
                     android:id="@+id/rBItem132"
                     android:layout_width="wrap_content"
@@ -209,21 +236,21 @@
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
 
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem133"
                     android:id="@+id/rBItem133"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem134"
                     android:id="@+id/rBItem134"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem135"
                     android:id="@+id/rBItem135"
                     android:layout_width="wrap_content"
@@ -232,18 +259,23 @@
             </RadioGroup>
 
             <TextView
-                android:layout_margin="@dimen/margenChico"
+                android:layout_marginBottom="@dimen/margenChico"
+                android:background="@drawable/boton_azul"
+                android:layout_below="@id/rGItem130"
+                android:layout_marginStart="@dimen/margenChico"
+                android:layout_marginEnd="@dimen/margenChico"
                 android:clickable="true"
                 android:id="@+id/item140"
-                android:textColor="@color/primary_text"
-                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/marfil"
+                android:minLines="2"
                 android:textSize="@dimen/tamañoSubTitulos"
                 android:text="@string/textoItem140"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <RadioGroup
-
+                android:layout_below="@id/item140"
                 android:layout_margin="@dimen/margenChico"
                 android:visibility="gone"
                 android:id="@+id/rGItem140"
@@ -251,36 +283,36 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:textColor="@color/marfil"
                     android:layout_margin="@dimen/margenChico"
-
                     android:text="@string/StrRbItem141"
                     android:id="@+id/rBItem141"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem142"
                     android:id="@+id/rBItem142"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem143"
                     android:id="@+id/rBItem143"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem144"
                     android:id="@+id/rBItem144"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <RadioButton
                     android:layout_margin="@dimen/margenChico"
-
+                    android:textColor="@color/marfil"
                     android:text="@string/StrRbItem145"
                     android:id="@+id/rBItem145"
                     android:layout_width="wrap_content"
@@ -288,16 +320,17 @@
 
             </RadioGroup>
             <ImageView
+                android:id="@+id/lineaDivisoria"
+                android:layout_below="@id/rGItem140"
                 android:layout_marginLeft="@dimen/margenChico"
                 android:layout_marginRight="@dimen/margenChico"
-                android:background="@color/primary_dark"
+                android:background="@color/accent"
                 android:layout_width="match_parent"
                 android:layout_height="2dp" />
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+
 
                 <android.support.v7.widget.RecyclerView
+                    android:layout_below="@id/lineaDivisoria"
                     android:layout_marginTop="@dimen/margenChico"
                     android:id="@+id/recyclerFotosFormulario"
                     android:layout_width="match_parent"
@@ -306,15 +339,15 @@
 
 
 
-            </FrameLayout>
             <LinearLayout
+                android:layout_below="@id/recyclerFotosFormulario"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp">
             </LinearLayout>
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
 

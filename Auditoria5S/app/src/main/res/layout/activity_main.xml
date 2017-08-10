@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:id="@+id/main_contenedorFragment"
     android:layout_height="match_parent"
+    android:background="@color/fondoOscuro"
     tools:context="com.nomad.auditoria5s.Activity.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"
+            android:text="AUDITORIA 5S"
+            android:textColor="@color/marfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgC"
+            android:alpha="0.25"
+            android:src="@drawable/logo5s"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+        <Button
+            android:id="@+id/botonInicio"
+            android:background="@drawable/boton_inicio"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="@dimen/margenChico"
+            android:paddingRight="@dimen/margenChico"
+            android:text="Comenzar auditoria"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imgC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
-</android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+
+
+</android.widget.LinearLayout>

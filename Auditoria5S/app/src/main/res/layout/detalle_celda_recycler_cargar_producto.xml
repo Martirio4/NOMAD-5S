@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/secondary_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <RelativeLayout
@@ -11,23 +12,24 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/tarjetaDetalle"
-            android:background="@color/accent"
+            android:background="@color/secondary_text"
             android:elevation="@dimen/elevacionTarjetaCargaProducto"
             android:layout_centerHorizontal="true"
             android:layout_width="@dimen/anchoFotoCargarProducto"
             android:layout_height="@dimen/altoFotoCargarProducto">
           <LinearLayout
+              android:background="@color/secondary_text"
               android:orientation="vertical"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content">
 
               <android.support.design.widget.TextInputLayout
                   android:layout_width="match_parent"
-                  android:textColorHint="@color/colorLoco"
+                  android:textColorHint="@color/accent"
                   android:layout_height="wrap_content">
                   <EditText
                       android:visibility="gone"
-                      android:background="@color/marfil"
+                      android:background="@color/secondary_text"
                       android:id="@+id/editRecycler"
                       android:hint="Insertar comentario"
                       android:textColor="@color/primary_text"
@@ -36,12 +38,13 @@
               </android.support.design.widget.TextInputLayout>
 
             <ImageView
+                android:background="@color/secondary_text"
                 android:id="@+id/imagenCamara"
                 android:layout_gravity="center"
                 android:layout_width="@dimen/anchoFotoCargarProducto"
                 android:layout_height="@dimen/altoFotoCargarProducto"
                 android:scaleType="centerInside"
-                android:src="@drawable/placeholder" />
+                />
 
 
 
@@ -49,6 +52,7 @@
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:background="@color/secondary_text"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margenGrande"
             android:layout_centerHorizontal="true"
@@ -57,10 +61,11 @@
             >
 
             <TextView
+                android:background="@color/secondary_text"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:id="@+id/textoObseracion"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </android.support.v7.widget.CardView>
